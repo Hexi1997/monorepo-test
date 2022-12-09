@@ -7,9 +7,22 @@
   "scripts": {
     "dev:h5-frontend": "yarn workspace h5-frontend dev",
     "dev:admin-frontend": "yarn workspace admin-frontend start",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "./node_modules/.bin/cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "commitizen": "^4.2.6",
+    "cz-customizable": "^7.0.0",
     "husky": "^8.0.0",
     "lerna": "^6.1.0"
   }
