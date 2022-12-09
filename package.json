@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:h5-frontend": "yarn workspace h5-frontend dev",
+    "dev:admin-frontend": "yarn workspace admin-frontend start",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lerna": "^6.1.0"
+  }
+}
